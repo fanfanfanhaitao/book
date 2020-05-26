@@ -1,0 +1,18 @@
+/* componets/ranking/ranking.wxss */
+
+.img-2 {
+    width: 50rpx;
+    height: 50rpx;
+    padding-right: 20rpx;
+}
+
+.div {
+    height: 90rpx;
+    line-height: 90rpx;
+}
+
+.div-2 {
+    height: 70rpx;
+    border-bottom: 1px #F3F3F3 solid;
+    font-size: 28rpx;
+}

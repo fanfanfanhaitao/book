@@ -1,0 +1,56 @@
+<view class="head" wx:if="{{msg===0}}">
+    <view class="head-1"></view>
+    <view wx:for="{{arr}}" wx:key="index" >
+        <view class="head-2">
+        <view class="box" data-src="{{item.cover}}" bind:tap="image"><image src="{{item.cover}}" class="image"></image></view>
+        <view class="m-top1,title">{{item.title}}</view>
+        <view class="m-top1,author">{{item.author}}</view>
+        </view>
+        <view class="details">
+            <view class="details1,flex,j-content">
+            <view class="button"><van-button round type="danger"  custom-style="width:240rpx" data-id="{{item._id}}" data-title="{{item.title}}" bind:tap="goChapter">开始阅读</van-button></view>
+            <view class="button"><van-button round custom-style="width:240rpx"
+             data-cover="{{item.cover}}" data-title="{{item.title}}" data-id="{{item._id}}" bind:click="clickTo">{{number>1?'加入书架':'已加入书架'}}</van-button></view>
+            </view>
+              <view class="m-top2">
+                <van-rate value="{{ item.rating.score/2 }}"  readonly allow-half color="#ee0a24" />
+             </view>
+             <view class="font-s">
+                 更新至<span class="color,m-left2">{{item.lastChapter}}</span>
+             </view>
+             <view class="content,m-top2">
+                    <van-tabs active="{{ active }}" bind:change="onChange">
+                     <van-tab title="详情" line-width="50px">
+                        <details intro="{{intro}}" bookChapters="{{bookChapters}}">
+                        
+                        </details>
+                        <view class="box-1">
+                            <view class="flex,j-content">
+                                <view >看过这本书的人还在看</view>
+                                <view class="flex,a-align,box-2" bind:tap="click"><image src="../../assets/images/sx1.png" class="imag"> </image>换一换</view>
+                            </view>
+                            <view class="flex,j-content">
+                            <view  wx:for="{{related}}" wx:key="index" data-id="{{item._id}}" data-name="{{item.title}}" bind:tap="clickItem">
+                                <image class="image1,m-top2" src="{{item.cover}}"></image>
+                                <view class="m-top1,b-padding">{{item.title}}</view>
+                            </view>
+                            </view>
+                        </view>
+                     </van-tab>
+                     <van-tab title="评价({{evaluate.length}})">
+                         <evaluate evaluate="{{evaluate}}">
+                         
+                         </evaluate>
+                     </van-tab>
+                     
+                 </van-tabs>
+             </view>
+             
+        </view>
+        
+    </view>
+    
+</view>
+<view wx:if="{{msg===1}}" class="flex,a-align,j-content3,tp-1" bind:tap="closeimg">
+      <view wx:for="{{arr}}" wx:key="index" ><image src="{{item.cover}}" class="image3"></image></view>
+</view>

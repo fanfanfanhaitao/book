@@ -1,0 +1,59 @@
+.head {
+    width: 90%;
+    margin: 0 auto;
+    height: 180rpx;
+}
+
+.head-1 {
+    width: 30%;
+}
+
+.head-2 {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.dele {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.dele1 {
+    position: absolute;
+    top: 0;
+    left: 170rpx;
+}
+
+.head-3 {
+    position: relative;
+    width: 220rpx;
+}
+
+.help {
+    border: 2rpx #A7A7A7 solid;
+    width: 120rpx;
+    height: 55rpx;
+    text-align: center;
+    line-height: 55rpx;
+    border-radius: 20rpx;
+}
+
+.title1 {
+    font-size: 28rpx;
+}
+
+.imag {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.imag-1 {
+    width: 220rpx;
+    height: 330rpx;
+}
+
+.size {
+    font-size: 26rpx;
+    color: #A7A7A7;
+    padding-bottom: 20rpx;
+}

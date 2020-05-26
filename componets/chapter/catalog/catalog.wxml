@@ -1,0 +1,8 @@
+<view class="flex,j-content,header,a-align">
+    <view class="m-left2,h1">目录</view>
+    <view class="close" bind:tap="send">收起</view>
+</view>
+<view class="border" wx:for="{{chapters}}" wx:key="index">
+  {{item.title}}
+
+</view>

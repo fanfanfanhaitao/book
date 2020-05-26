@@ -1,0 +1,45 @@
+.field-class {
+    height: 70rpx;
+    /* background-color: #EFEFEF;
+    border-radius: 30rpx; */
+}
+
+.imag {
+    width: 50rpx;
+    height: 50rpx;
+}
+
+.box-2 {
+    color: #FF6B50;
+}
+
+.div {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.custom-class {
+    height: 60rpx;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+}
+
+.div-1 {
+    margin-top: 50rpx;
+}
+
+.color-2 {
+    color: #FF7F68;
+    font-size: 26rpx;
+    margin-top: 40rpx;
+}
+
+.box-3 {
+    margin-top: 20rpx;
+    border-bottom: 1rpx #F3F3F3 solid;
+    padding-bottom: 20rpx;
+}
+
+.flex1 {
+    padding-right: 20rpx;
+}

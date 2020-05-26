@@ -1,0 +1,56 @@
+
+<van-search placeholder="{{number>1?'{{value}}':'输入书名或作者名'}}" shape="round" field-class="field-class"  input-align="center" value="{{ value }}" bind:clear="clear" bind:search="goTo" />
+
+  <view class="div" wx:if="{{search.length===0}}">
+    <view class="flex,j-content">
+     <view>大家都在搜</view>
+     <view class="flex,a-align,box-2" bind:tap="click">
+         <image src="../../assets/images/sx1.png" class="imag"></image>
+         <span class="m-left1">换一换</span> 
+     </view>
+    </view>
+   <view>
+     <van-tag type="primary" size="large" custom-class="custom-class" data-id="{{hotWords[0].book}}" data-name="{{hotWords[0].word}}" bind:tap="getTo" wx:if="{{hotWords[0]}}">{{hotWords[0].word}}</van-tag>
+     <van-tag type="success" size="large" custom-class="custom-class" data-id="{{hotWords[1].book}}" data-name="{{hotWords[1].word}}" bind:tap="getTo" wx:if="{{hotWords[1]}}">{{hotWords[1].word}}</van-tag>
+     <van-tag type="danger" size="large" custom-class="custom-class" data-id="{{hotWords[2].book}}" data-name="{{hotWords[2].word}}" bind:tap="getTo" wx:if="{{hotWords[2]}}"> {{hotWords[2].word}}</van-tag>
+     <van-tag type="warning" size="large" custom-class="custom-class" data-id="{{hotWords[3].book}}" data-name="{{hotWords[3].word}}" bind:tap="getTo" wx:if="{{hotWords[3]}}">{{hotWords[3].word}}</van-tag>
+     <van-tag color="#7232dd" size="large" custom-class="custom-class" data-id="{{hotWords[4].book}}" data-name="{{hotWords[4].word}}" bind:tap="getTo" wx:if="{{hotWords[4]}}">{{hotWords[4].word}}</van-tag>
+     <van-tag color="#FA8072" size="large" custom-class="custom-class" data-id="{{hotWords[5].book}}" data-name="{{hotWords[5].word}}" bind:tap="getTo" wx:if="{{hotWords[5]}}">{{hotWords[5].word}}</van-tag>
+     <van-tag color="#FF69B4" size="large" custom-class="custom-class" data-id="{{hotWords[6].book}}" data-name="{{hotWords[6].word}}" bind:tap="getTo" wx:if="{{hotWords[6]}}">{{hotWords[6].word}}</van-tag>
+     <van-tag color="#228B22" size="large" custom-class="custom-class" data-id="{{hotWords[7].book}}" data-name="{{hotWords[7].word}}" bind:tap="getTo" wx:if="{{hotWords[7]}}">{{hotWords[7].word}}</van-tag>
+     <van-tag color="#66CDAA" size="large" custom-class="custom-class" data-id="{{hotWords[8].book}}" data-name="{{hotWords[8].word}}" bind:tap="getTo" wx:if="{{hotWords[8]}}">{{hotWords[8].word}}</van-tag>
+      
+   </view>
+   <view>
+     <view class="flex,j-content,m-top2,div-1">
+       <view>搜索历史</view>
+       <view class="flex,a-align,box-2" bind:tap="clickTo">
+         <image src="../../assets/images/sc.png" class="imag"></image>
+        <span class="m-left1">清空</span> 
+        </view>
+     </view>
+       <view class="flex,box-3">
+         <view wx:for="{{history}}" wx:key="index" data-value="{{item}}" bind:tap="clickItem">
+            <view class="flex1">{{item}}</view>
+        </view>
+       </view>
+   </view> 
+</view >
+<view class="div" wx:if="{{search.length>0}}">
+    <view class="content">
+           <view class="flex,m-top1,list" wx:for="{{search}}" wx:key="index" data-id="{{item._id}}" data-name="{{item.title}}" bind:tap="getTo">
+              <view >
+                 <image src="{{item.cover}}" class="image1">  
+                 </image>  
+              </view>
+              <view class="m-left2,text-h">
+                 <view class="title">{{item.title}}</view>
+                 <view class="text-color,m-top2">{{item.author}}</view>
+                 <view class="over,text-color,m-top2">{{item.shortIntro}}</view>
+                 <view class="color-2">最近收藏<span class="m-left1">{{item.latelyFollower}}</span></view>
+                 
+              </view>
+           </view>
+        
+        </view>
+</view >

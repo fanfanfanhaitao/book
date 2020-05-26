@@ -1,0 +1,20 @@
+.div {
+    height: 130rpx;
+    line-height: 130rpx;
+}
+
+.box {
+    width: 240rpx;
+    height: 150rpx;
+    margin: 0;
+    text-align: center;
+    line-height: 70rpx;
+    border-bottom: 1rpx #F7F7F7 solid;
+    border-top: 1rpx #F7F7F7 solid;
+    border-left: 1rpx #F7F7F7 solid;
+}
+
+.box-1 {
+    font-size: 36rpx;
+    font-weight: bold;
+}

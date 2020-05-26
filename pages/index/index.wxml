@@ -1,0 +1,29 @@
+
+<view >
+  <view class="flex,j-content,head,a-align">
+      <view class="box" bind:tap="closeDel" wx:if="{{msg===1}}">
+         <image src="../../assets/images/right.png" class="imag">  
+     </image>  
+      </view>
+       <view class="box" bind:tap="openDel" wx:if="{{msg===0}}">
+         <image src="../../assets/images/xg.png" class="imag">  
+     </image>  
+      </view>
+      <view class="flex,j-content,head-1">
+          <view class="help" bind:tap="goTo">帮助</view>
+          <view> <image src="../../assets/images/sx.png" class="imag">   </image>  
+          </view>
+      </view>
+  </view>
+  <view wx:if="{{bookshelf.length===0}}" class="text-center,m-top2">
+        主人还没收藏书籍哦，请去书城收藏吧！
+  </view>
+  <view wx:if="{{bookshelf.length>0}}" class="head-2,flex,delete,wrap">
+      <view wx:for="{{bookshelf}}" wx:key="index" class="m-left2,head-3" data-name="{{item.title}}" data-id="{{item.id}}" bind:tap="getTo">
+          <view class="dele1" wx:if="{{active===1}}" data-title="{{item.title}}" catch:tap="delete"> <image src="../../assets/images/delete.png" class="dele"></image></view>
+           <view><image src="{{item.cover}}" class="imag-1"></image></view>
+           <view class="m-top1,title1">{{item.title}}</view>
+           <view class="size">读到第1章</view>
+      </view>
+  </view>
+</view>

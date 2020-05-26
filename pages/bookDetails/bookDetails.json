@@ -1,0 +1,12 @@
+{
+    "usingComponents": {
+        "details": "../../componets/booksdetails/details/details",
+        "evaluate": "../../componets/booksdetails/evaluate/evaluate",
+        "van-button": "../../dist/button/index",
+        "van-rate": "../../dist/rate/index",
+        "van-tab": "../..//dist/tab/index",
+        "van-tabs": "../..//dist/tabs/index"
+    }
+
+
+}

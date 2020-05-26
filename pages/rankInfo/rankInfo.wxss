@@ -1,0 +1,15 @@
+/* pages/rankInfo/rankInfo.wxss */
+
+.content {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.color {
+    color: red;
+}
+
+.head {
+    width: 60%;
+    font-size: 32rpx;
+}

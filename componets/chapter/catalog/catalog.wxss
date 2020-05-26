@@ -1,0 +1,29 @@
+.header {
+    height: 100rpx;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.h1 {
+    font-size: 36rpx;
+    font-weight: bold;
+}
+
+.close {
+    width: 100rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    text-align: center;
+    border-top-left-radius: 25rpx;
+    border-bottom-left-radius: 25rpx;
+    color: white;
+    background-color: red;
+}
+
+.border {
+    margin-left: 30rpx;
+    border-bottom: 1rpx #e6e2e2 solid;
+    height: 80rpx;
+    line-height: 80rpx;
+    color: #686868;
+}

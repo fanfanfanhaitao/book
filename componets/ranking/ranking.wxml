@@ -1,0 +1,20 @@
+<view >
+      <view class="text-in,text-c,div">男生</view>
+      
+          <view wx:for="{{rank.male}}" class="flex,a-align,m-left3,div-2" wx:key="index" wx:if="{{index<7}}" data-id="{{item._id}}" data-name="{{item.title}}" bind:tap="clickItem">
+              <image src="{{item.cover}}" class="img-2"></image>
+              {{item.title}}
+          </view>
+          <view class='text-in,text-c,div'>女生</view>
+          <view wx:for="{{rank.female}}" class="flex,a-align,m-left3,div-2" wx:key="index" wx:if="{{index<7}}" data-id="{{item._id}}" data-name="{{item.title}}" bind:tap="clickItem">
+              <image src="{{item.cover}}" class="img-2"></image>
+              {{item.title}}
+          </view>
+          <view class='text-in,text-c,div'>出版</view>
+          <view wx:for="{{rank.epub}}" class="flex,a-align,m-left3,div-2" wx:key="index" wx:if="{{index<7}}" data-id="{{item._id}}" data-name="{{item.title}}" bind:tap="clickItem">
+              <image src="{{item.cover}}" class="img-2"></image>
+              {{item.title}}
+          </view>
+      
+
+</view>

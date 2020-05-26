@@ -1,0 +1,22 @@
+.h1 {
+    font-size: 50rpx;
+    font-weight: bold;
+}
+
+.bt {
+    height: 100rpx;
+    line-height: 100rpx;
+    color: #45413D;
+}
+
+.p {
+    line-height: 60rpx;
+    color: #686868;
+    font-size: 28rpx;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 40rpx;
+}

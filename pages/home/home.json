@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "cation": "../../componets/cation/cation",
+        "ranking": "../../componets/ranking/ranking"
+    }
+}

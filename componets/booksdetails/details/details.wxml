@@ -1,0 +1,9 @@
+<view class="box">
+   <view class="head">
+   {{intro}}
+   </view>
+   <view class="ml">
+    <image src="../../../assets/images/ml.png" class="img-1"></image>总目录({{bookChapters.length}}章)
+   </view>
+</view>
+

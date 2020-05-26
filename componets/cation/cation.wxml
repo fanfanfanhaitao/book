@@ -1,0 +1,27 @@
+<view>
+   <view class='text-in,text-c,div'>男生</view>
+        <view class="flex,wrap">
+           
+               <view wx:for="{{male}}" wx:key="index" class="box" data-name='{{item.name}}' bind:tap="goTo">
+            <view class="box-1">{{item.name}}</view>
+            <view class="text-c">{{item.bookCount}}本</view>
+        </view>
+          
+       
+    </view>
+    <view class='text-in,text-c,div'>女生</view>
+        <view class="flex,wrap">
+        <view wx:for="{{female}}" wx:key="index" class="box" data-name='{{item.name}}' bind:tap="goTo1">
+            <view class="box-1">{{item.name}}</view>
+            <view class="text-c">{{item.bookCount}}本</view>
+        </view>
+    </view>
+     <view class='text-in,text-c,div'>出版</view>
+        <view class="flex,wrap">
+        <view wx:for="{{press}}" wx:key="index" class="box" data-name='{{item.name}}' bind:tap="goTo2">
+            <view class="box-1">{{item.name}}</view>
+            <view class="text-c">{{item.bookCount}}本</view>
+        </view>
+    </view>
+</view>
+

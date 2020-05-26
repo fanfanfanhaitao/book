@@ -1,0 +1,19 @@
+<view>
+  <view class="flex,j-content,a-align,box,">
+     <view wx:for="{{arr}}" wx:key="index" >
+        <view data-index='{{index}}' bind:tap="clickItem" class="{{active===index ? 'color' : ''}}">{{item.name}}</view>
+        <view class="line" wx:if="{{active===index}}"></view>
+     </view>
+    
+  </view>
+    <view class="cotent">
+        <view wx:if="{{active===0}}">
+             <cation male="{{male}}" female="{{female}}" press="{{press}}" male1="{{male1}}" female1="{{female1}}" press1="{{press1}}"></cation>
+           
+        </view>
+        <view wx:if="{{active===1}}">
+            <ranking rank="{{rank}}"></ranking>
+             
+        </view>
+    </view>
+</view>

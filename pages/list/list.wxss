@@ -1,0 +1,18 @@
+/* pages/list/list.wxss */
+
+.head {
+    width: 60%;
+}
+
+.head-1 {
+    flex: 1;
+}
+
+.color {
+    color: red;
+}
+
+.content {
+    width: 94%;
+    margin: 0 auto;
+}

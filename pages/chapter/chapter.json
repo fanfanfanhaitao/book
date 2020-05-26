@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "catalog": "../../componets/chapter/catalog/catalog",
+        "van-popup": "../../dist/popup/index"
+    }
+}

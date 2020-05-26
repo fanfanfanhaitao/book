@@ -1,0 +1,118 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.1",
+	"appid": "wx9b99f4333014afc6",
+	"projectname": "reader",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/home/home",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/list/list",
+					"pathName": "pages/list/list",
+					"query": "name=玄幻& gender=\"male\",&minor=东方玄幻,异界大陆,异界争霸,远古神话",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/bookDetails/bookDetails",
+					"pathName": "pages/bookDetails/bookDetails",
+					"query": "id=592fe687c60e3c4926b040ca",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/rankInfo/rankInfo",
+					"pathName": "pages/rankInfo/rankInfo",
+					"query": "id=54d42d92321052167dfb75e3",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "pages/search/search",
+					"pathName": "pages/search/search",
+					"query": "value=你",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "pages/chapter/chapter",
+					"pathName": "pages/chapter/chapter",
+					"query": "id=592fe687c60e3c4926b040ca&name=剑来",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/chapter/chapter",
+					"pathName": "pages/chapter/chapter",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,31 @@
+<view>
+    <view class="c-height">
+    <view class="flex,j-content,head,m-left2">
+            <view  bind:tap="clickItem1" class="{{active===1 ? 'color' : ''}}">
+                日榜
+            </view>
+             <view  bind:tap="clickItem2" class="{{active===2 ? 'color' : ''}}">
+                月榜
+            </view>
+             <view  bind:tap="clickItem3" class="{{active===3 ? 'color' : ''}}">
+                总榜
+            </view>
+        </view>
+     </view>   
+   <view class="content">
+           <view class="flex,m-top1,list" wx:for="{{rank}}" wx:key="index" data-id="{{item._id}}" data-name="{{item.title}}" bind:tap="getTo">
+              <view >
+                 <image src="{{item.cover}}" class="image1">  
+                 </image>  
+              </view>
+              <view class="m-left2,text-h">
+                 <view class="title">{{item.title}}</view>
+                 <view class="text-color,m-top2">{{item.author}}</view>
+                 <view class="over,text-color,m-top2">{{item.shortIntro}}</view>
+                 
+              </view>
+           </view>
+        
+        </view>
+
+</view>

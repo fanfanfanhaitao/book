@@ -1,0 +1,37 @@
+<view>
+       <view class="c-height">
+        <view class="flex,j-content,head,m-left2">
+            <view wx:for="{{typeList}}" wx:key="index" data-index='{{index}}' data-type='{{item.id}}' bind:tap="clickItem" class="{{active===index ? 'color' : ''}}">
+                {{item.name}}
+            </view>
+        </view>
+    </view>
+         <view class="c-height,m-left2" wx:if="{{male.length>0}}">
+                <view class="flex" >
+                    <span class="{{active1===-1 ? 'color' : ''}}"  bind:tap="clickTo">全部</span>
+             <view wx:for="{{male}}" wx:key="index" wx:if="{{index<5}}" data-index1='{{index}}' data-minor="{{item}}" bind:tap="clickMinor" class="m-left2,head-1,{{active1===index ? 'color' : ''}}">
+                {{item}}
+             </view>
+         </view>
+        </view>
+        <view class="content">
+           <view class="flex,m-top1,list" wx:for="{{list}}" wx:key="index" data-id="{{item._id}}" data-name='{{item.title}}' bind:tap="getTo">
+              <view >
+                 <image src="{{item.cover}}" class="image1">  
+                 </image>  
+              </view>
+              <view class="m-left2,text-h">
+                 <view class="title">{{item.title}}</view>
+                 <view class="text-color,m-top2">{{item.author}}</view>
+                 <view class="over,text-color,m-top2">{{item.shortIntro}}</view>
+                 <view class="m-top2,flex">
+                     <view class="tap,padding,bg-color1" >  {{item.minorCate}} </view>
+                    <view class="tap,padding,bg-color2,m-left2" wx:if="{{item.tags[1]}}">{{item.tags[1]}}</view>
+                    <view class="tap,padding,bg-color3,m-left2" wx:if="{{item.tags[2]}}">{{item.tags[2]}}</view>
+                 </view>
+              </view>
+           </view>
+        
+        </view>
+
+</view>

@@ -1,0 +1,27 @@
+.image1 {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+
+.evaluate {
+    width: 95%;
+}
+
+.content {
+    text-align: start;
+}
+
+.nickname {
+    color: #FF8A75;
+}
+
+.content-2 {
+    margin-top: 30rpx;
+}
+
+.content-1 {
+    font-size: 26rpx;
+    line-height: 45rpx;
+    color: #6C6C6C;
+}

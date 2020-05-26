@@ -1,0 +1,33 @@
+<!--pages/chapter/chapter.wxml-->
+<import src="../../wxParse/wxParse.wxml"/> 
+<view style="background:{{color}}" class="body1" wx:if="{{number===0}}">
+    
+    <view class="m-top2,title">{{title}}</view>
+    <view class="wxParse,text-in2,body,m-top2"  style="font-size:{{fontSize}}rpx" bind:tap="openbg">
+        <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+    <view class="flex,j-content3">
+        <view class="flex,j-content,box-1">
+            <view class="box,box-2" bind:tap="up">上一章</view>
+            <view class="box,box-3" bind:tap="next">下一章</view>
+        </view>
+    </view>
+    <view class="flex,j-content1,bottom,a-align" wx:if="{{active===1}}">
+        <view bind:tap="openCatalog">目录</view>
+      
+        <view bind:tap="small">Aa-</view>
+        <view bind:tap="big">Aa+</view>
+        <view wx:if="{{active1===1}}" class="div-1,flex,a-align,l-padding">
+            <view class="m-left">换肤</view>
+            <view class="m-left,bgbox,color1" data-color="white" bind:tap="bgcolor"></view>
+            <view class="m-left,bgbox,color2" data-color="#E8DFCB" bind:tap="bgcolor"></view>
+            <view class="m-left,bgbox,color3" data-color="#E8EDE5" bind:tap="bgcolor"></view>
+            <view class="m-left,bgbox,color4" data-color="#B6B6B6" bind:tap="bgcolor"></view>
+             <view class="m-left,bgbox,color5" data-color="#E8EDE5" bind:tap="bgcolor"></view>
+        </view>
+        <view bind:tap="backgd">背景</view>
+    </view>
+</view>
+<view wx:if="{{number===1}}">
+    <catalog chapters="{{chapters}}" bind:send='send'></catalog>
+</view>

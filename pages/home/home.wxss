@@ -1,0 +1,15 @@
+.box {
+    width: 60%;
+    height: 100rpx;
+    margin: 0 auto;
+}
+
+.line {
+    height: 4.5rpx;
+    background: red;
+    margin-top: 10rpx;
+}
+
+.color {
+    color: red;
+}
